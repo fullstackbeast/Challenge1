@@ -6,12 +6,12 @@ namespace StringBorder
     {
         static void Main(string[] args)
         {
-            int s = PalindromeBorders("aaaa");
-            Console.WriteLine(s);
+           PalindromeBorders("ababa");
+       
         }
 
 
-        static int PalindromeBorders(string s)
+        static void PalindromeBorders(string s)
         {
             var count = 0;
             for (var i = 0; i < s.Length - 1; i++)
@@ -22,7 +22,7 @@ namespace StringBorder
                 }
             }
 
-            return count;
+            Console.WriteLine(count);
         }
 
         static int CountPalindromeBorders(string s)
